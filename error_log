@@ -1,0 +1,8 @@
+[02-Nov-2018 13:36:35 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[02-Nov-2018 13:38:02 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[02-Nov-2018 13:43:40 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[02-Nov-2018 13:45:37 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[02-Nov-2018 13:54:25 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/Solver.php on line 220
+[02-Nov-2018 13:56:11 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[18-Nov-2018 20:47:06 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/Solver.php on line 220
+[18-Nov-2018 20:54:11 UTC] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home1/profes73/php/composer.phar/src/Composer/DependencyResolver/Solver.php on line 220
