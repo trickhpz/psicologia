@@ -33,25 +33,26 @@
 			$this->col[] = ["label"=>"Nome do aluno","name"=>"alunos_id","join"=>"alunos,nome"];
 			$this->col[] = ["label"=>"Dia","name"=>"dia"];
 			$this->col[] = ["label"=>"Horário","name"=>"horario"];
-			$this->col[] = ["label"=>"Numero da sala","name"=>"numeroSala"];
+			$this->col[] = ["label"=>"Número da sala","name"=>"numeroSala"];
 			$this->col[] = ["label"=>"Situação","name"=>"situacao"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Nome do aluno','name'=>'alunos_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'alunos,nome'];
-			$this->form[] = ['label'=>'Dia','name'=>'dia','type'=>'date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Horário','name'=>'horario','type'=>'time','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Número da sala','name'=>'numeroSala','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Situação','name'=>'situacao','type'=>'select','width'=>'col-sm-9','dataenum'=>'Disponível;Agendado;Cancelado'];
+			$this->form[] = ['label'=>'Nome do aluno','name'=>'alunos_id','type'=>'select2','width'=>'col-sm-3','datatable'=>'alunos,nome'];
+			$this->form[] = ['label'=>'Dia','name'=>'dia','type'=>'date','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Horário','name'=>'horario','type'=>'time','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Número da sala','name'=>'numeroSala','type'=>'text','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Situação','name'=>'situacao','type'=>'select','width'=>'col-sm-3','dataenum'=>'Disponível;Agendado;Cancelado'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ['label'=>'Nome do aluno','name'=>'alunos_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'alunos,nome'];
-			//$this->form[] = ['label'=>'Dia','name'=>'dia','type'=>'date','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Horário','name'=>'horario','type'=>'time','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Número da sala','name'=>'numeroSala','type'=>'text','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Nome do aluno','name'=>'alunos_id','type'=>'select2','width'=>'col-sm-4','datatable'=>'alunos,nome'];
+			//$this->form[] = ['label'=>'Dia','name'=>'dia','type'=>'date','width'=>'col-sm-1'];
+			//$this->form[] = ['label'=>'Horário','name'=>'horario','type'=>'time','width'=>'col-sm-1'];
+			//$this->form[] = ['label'=>'Número da sala','name'=>'numeroSala','type'=>'text','width'=>'col-sm-1'];
+			//$this->form[] = ['label'=>'Situação','name'=>'situacao','type'=>'select','width'=>'col-sm-2','dataenum'=>'Disponível;Agendado;Cancelado'];
 			# OLD END FORM
 
 			/* 

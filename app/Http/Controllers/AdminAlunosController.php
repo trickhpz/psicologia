@@ -39,11 +39,11 @@
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'RGM','name'=>'rgm','type'=>'number','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'RG','name'=>'rg','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Órgão Emissor','name'=>'orgaoEmissor','type'=>'text','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required','width'=>'col-sm-3'];
+			$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required|max:11','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'RGM','name'=>'rgm','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'RG','name'=>'rg','type'=>'text','width'=>'col-sm-2'];
+                        $this->form[] = ['label'=>'Órgão Emissor','name'=>'orgaoEmissor','type'=>'text','width'=>'col-sm-2'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
@@ -52,7 +52,6 @@
 			//$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'RGM','name'=>'rgm','type'=>'number','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'RG','name'=>'rg','type'=>'text','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'UF','name'=>'ufRg','type'=>'text','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Órgão Emissor','name'=>'orgaoEmissor','type'=>'text','width'=>'col-sm-10'];
 			# OLD END FORM
 

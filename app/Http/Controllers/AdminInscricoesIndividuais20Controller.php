@@ -33,7 +33,7 @@
 			$this->col[] = ["label"=>"Nome do paciente","name"=>"pacientes_id","join"=>"pacientes,nome"];
 			$this->col[] = ["label"=>"Data","name"=>"data"];
 			$this->col[] = ["label"=>"Modalidade","name"=>"modalidade"];
-			$this->col[] = ["label"=>"Numero do Prontuário","name"=>"numeroProntuario"];
+			$this->col[] = ["label"=>"Número do Prontuário","name"=>"numeroProntuario"];
 			$this->col[] = ["label"=>"Nome do Responsável","name"=>"nomeResponsavel"];
 			$this->col[] = ["label"=>"Parentesco","name"=>"parentescoResponsavel"];
 			$this->col[] = ["label"=>"RG","name"=>"rgResponsavel"];
@@ -52,24 +52,25 @@
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Nome do paciente','name'=>'pacientes_id','type'=>'select2','validation'=>'required','width'=>'col-sm-10','datatable'=>'pacientes,nome'];
-			$this->form[] = ['label'=>'Data','name'=>'data','type'=>'date','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Modalidade','name'=>'modalidade','type'=>'select','validation'=>'required','width'=>'col-sm-10','dataenum'=>'Criança;Adolescente;Adulto;Casal;Família'];
-			$this->form[] = ['label'=>'Numero do Prontuário','name'=>'numeroProntuario','type'=>'number','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Nome do Responsável','name'=>'nomeResponsavel','type'=>'text','width'=>'col-sm-10','placeholder'=>'Nome do Responsável'];
-			$this->form[] = ['label'=>'RG','name'=>'rgResponsavel','type'=>'text','width'=>'col-sm-10','placeholder'=>'RG do Responsável'];
-			$this->form[] = ['label'=>'CPF','name'=>'cpfResponsavel','type'=>'text','width'=>'col-sm-10','placeholder'=>'CPF do Responsável'];
-			$this->form[] = ['label'=>'Parentesco','name'=>'parentescoResponsavel','type'=>'text','width'=>'col-sm-10','placeholder'=>'Parentesco do Responsável'];
-			$this->form[] = ['label'=>'Renda','name'=>'rendaResponsavel','type'=>'money','width'=>'col-sm-10','placeholder'=>'Renda do Responsável'];
-			$this->form[] = ['label'=>'Profissão/Ocupação','name'=>'profissaoResponsavel','type'=>'text','width'=>'col-sm-10','placeholder'=>'Profissão/Ocupação do Responsável'];
-			$this->form[] = ['label'=>'Paciente interno - UDF','name'=>'pacienteInterno','type'=>'checkbox','width'=>'col-sm-10','dataenum'=>'sim;não'];
-			$this->form[] = ['label'=>'Aluno do curso','name'=>'nomeCurso','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Professor de','name'=>'professor','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Funcionário do setor','name'=>'setorFuncionario','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Paciente da comunidade','name'=>'pacienteComunidade','type'=>'checkbox','width'=>'col-sm-10','dataenum'=>'sim;não'];
-			$this->form[] = ['label'=>'Encaminhado por','name'=>'responEncaminhamento','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Disponibilidade para atendimento - Dias','name'=>'diaSemama','type'=>'select','width'=>'col-sm-10','dataenum'=>'Segunda-feira;Terça-feira;Quarta-feira;Quinta-feira;Sexta-feira;Sábado;Domingo'];
-			$this->form[] = ['label'=>'Horário','name'=>'horario','type'=>'time','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Nome do paciente','name'=>'pacientes_id','type'=>'select2','validation'=>'required','width'=>'col-sm-3','datatable'=>'pacientes,nome'];
+			$this->form[] = ['label'=>'Data','name'=>'data','type'=>'date','validation'=>'required','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Modalidade','name'=>'modalidade','type'=>'select','width'=>'col-sm-2','dataenum'=>'Criança;Adolescente;Adulto;Casal;Família'];
+			$this->form[] = ['label'=>'Número do Prontuário','name'=>'numeroProntuario','type'=>'number','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Nome do Responsável','name'=>'nomeResponsavel','type'=>'text','width'=>'col-sm-3','placeholder'=>'Nome do Responsável'];
+			$this->form[] = ['label'=>'Parentesco','name'=>'parentescoResponsavel','type'=>'text','width'=>'col-sm-3','placeholder'=>'Parentesco do Responsável'];
+			$this->form[] = ['label'=>'RG','name'=>'rgResponsavel','type'=>'text','width'=>'col-sm-2','placeholder'=>'RG do Responsável'];
+			$this->form[] = ['label'=>'CPF','name'=>'cpfResponsavel','type'=>'text','width'=>'col-sm-2','validation'=>'max:11','placeholder'=>'CPF do Responsável'];
+			
+			$this->form[] = ['label'=>'Renda','name'=>'rendaResponsavel','type'=>'money','width'=>'col-sm-1','placeholder'=>'Renda do Responsável'];
+			$this->form[] = ['label'=>'Profissão/Ocupação','name'=>'profissaoResponsavel','type'=>'text','width'=>'col-sm-2','placeholder'=>'Profissão/Ocupação do Responsável'];
+			$this->form[] = ['label'=>'Paciente interno - UDF','name'=>'pacienteInterno','type'=>'checkbox','width'=>'col-sm-1','dataenum'=>'sim;não'];
+			$this->form[] = ['label'=>'Aluno do curso','name'=>'nomeCurso','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Professor de','name'=>'professor','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Funcionário do setor','name'=>'setorFuncionario','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Paciente da comunidade','name'=>'pacienteComunidade','type'=>'checkbox','width'=>'col-sm-1','dataenum'=>'sim;não'];
+			$this->form[] = ['label'=>'Encaminhado por','name'=>'responEncaminhamento','type'=>'text','width'=>'col-sm-3'];
+			$this->form[] = ['label'=>'Disponibilidade para atendimento - Dias','name'=>'diaSemama','type'=>'select','width'=>'col-sm-3','dataenum'=>'Segunda-feira;Terça-feira;Quarta-feira;Quinta-feira;Sexta-feira;Sábado;Domingo'];
+			$this->form[] = ['label'=>'Horário','name'=>'horario','type'=>'time','width'=>'col-sm-3'];
 			# OLD END FORM
 
 			/* 

@@ -53,40 +53,40 @@
 			$this->col[] = ["label"=>"Operadora","name"=>"operadoraCel"];
 			$this->col[] = ["label"=>"Telefone Recado","name"=>"telRecado"];
 			$this->col[] = ["label"=>"Nome","name"=>"nomeRespRecado"];
-			$this->col[] = ["label"=>"Data do agendamento","name"=>"agendamento"];
+			$this->col[] = ["label"=>"Data e horário do agendamento","name"=>"agendamento"];
 			$this->col[] = ["label"=>"Status do agendamento","name"=>"statusAtendimento"];
 			$this->col[] = ["label"=>"Anotação","name"=>"anotacao"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'RGM','name'=>'rgm','type'=>'number','validation'=>'numeric','width'=>'col-sm-8'];
-			$this->form[] = ['label'=>'Data de nascimento','name'=>'nascimento','type'=>'date','validation'=>'date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Idade Atual','name'=>'idadeAtual','type'=>'number','validation'=>'numeric','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Sexo','name'=>'sexo','type'=>'radio','width'=>'col-sm-10','dataenum'=>'M;F'];
-			$this->form[] = ['label'=>'RG','name'=>'rg','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Endereço','name'=>'endereco','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Bairro','name'=>'bairro','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Cidade','name'=>'cidade','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'UF','name'=>'uf','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'CEP','name'=>'cep','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Profissão','name'=>'profissao','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Renda','name'=>'renda','type'=>'money','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Apresenta alguma necessidade especial?','name'=>'possuiNecessEspecial','type'=>'radio','width'=>'col-sm-10','dataenum'=>'sim;não'];
-			$this->form[] = ['label'=>'Se sim, qual?','name'=>'qualNecessEspecial','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Participa de algum programa social? (Ex: COMPP/CREAS)','name'=>'participaProgSocial','type'=>'radio','width'=>'col-sm-10','dataenum'=>'sim;não'];
-			$this->form[] = ['label'=>'Se sim, Qual(is)?','name'=>'qualProgSocial','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Telefone residencial','name'=>'telResidencial','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Telefone trabalho','name'=>'telTrabalho','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Telefone celular','name'=>'telCelular','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Operadora','name'=>'operadoraCel','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Telefone Recado','name'=>'telRecado','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Nome','name'=>'nomeRespRecado','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Data do agendamento','name'=>'agendamento','type'=>'datetime','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Status do agendamento','name'=>'statusAtendimento','type'=>'select','width'=>'col-sm-10','dataenum'=>'Aguardando consulta;Consulta confirmada;Consulta reagendada;Reagendar paciente;Consulta cancelada;Retornar ligação;Ligar para o paciente'];
-			$this->form[] = ['label'=>'Anotação','name'=>'anotacao','type'=>'text','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required','width'=>'col-sm-3'];
+			$this->form[] = ['label'=>'RGM','name'=>'rgm','type'=>'number','validation'=>'numeric','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Data de nascimento','name'=>'nascimento','type'=>'date','validation'=>'date','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Idade Atual','name'=>'idadeAtual','type'=>'number','validation'=>'numeric','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Sexo','name'=>'sexo','type'=>'radio','width'=>'col-sm-1','dataenum'=>'M;F'];
+			$this->form[] = ['label'=>'RG','name'=>'rg','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required|max:11','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Endereço','name'=>'endereco','type'=>'text','width'=>'col-sm-4'];
+			$this->form[] = ['label'=>'Bairro','name'=>'bairro','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Cidade','name'=>'cidade','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'UF','name'=>'uf','type'=>'text','width'=>'col-sm-1','validation'=>'max:2'];
+			$this->form[] = ['label'=>'CEP','name'=>'cep','type'=>'text','width'=>'col-sm-2','validation'=>'max:9'];
+			$this->form[] = ['label'=>'Profissão','name'=>'profissao','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Renda','name'=>'renda','type'=>'money','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Apresenta alguma necessidade especial?','name'=>'possuiNecessEspecial','type'=>'radio','width'=>'col-sm-1','dataenum'=>'sim;não'];
+			$this->form[] = ['label'=>'Se sim, qual?','name'=>'qualNecessEspecial','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Participa de algum programa social? (Ex: COMPP/CREAS)','name'=>'participaProgSocial','type'=>'radio','width'=>'col-sm-1','dataenum'=>'sim;não'];
+			$this->form[] = ['label'=>'Se sim, Qual(is)?','name'=>'qualProgSocial','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Telefone residencial','name'=>'telResidencial','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Telefone trabalho','name'=>'telTrabalho','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Telefone celular','name'=>'telCelular','type'=>'text','validation'=>'required','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Operadora','name'=>'operadoraCel','type'=>'text','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Telefone Recado','name'=>'telRecado','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Nome do responsável','name'=>'nomeRespRecado','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Data e horário do agendamento','name'=>'agendamento','type'=>'datetime','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Status do agendamento','name'=>'statusAtendimento','type'=>'select','width'=>'col-sm-2','dataenum'=>'Aguardando consulta;Consulta confirmada;Consulta reagendada;Reagendar paciente;Consulta cancelada;Retornar ligação;Ligar para o paciente'];
+			$this->form[] = ['label'=>'Anotação','name'=>'anotacao','type'=>'textarea','width'=>'col-sm-4'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM

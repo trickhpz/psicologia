@@ -5,14 +5,14 @@
 	use DB;
 	use CRUDBooster;
 
-	class AdminCoordenadoresController extends \crocodicstudio\crudbooster\controllers\CBController {
+	class AdminAgendaController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
 
 			# START CONFIGURATION DO NOT REMOVE THIS LINE
 			$this->title_field = "id";
 			$this->limit = "20";
-			$this->orderby = "nome,asc";
+			$this->orderby = "agendamento,asc";
 			$this->global_privilege = false;
 			$this->button_table_action = true;
 			$this->button_bulk_action = true;
@@ -25,32 +25,28 @@
 			$this->button_filter = true;
 			$this->button_import = false;
 			$this->button_export = false;
-			$this->table = "coordenadores";
+			$this->table = "pacientes";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
+			$this->col[] = ["label"=>"Data e horário do agendamento","name"=>"agendamento"];
 			$this->col[] = ["label"=>"Nome","name"=>"nome"];
+			$this->col[] = ["label"=>"Status do atendimento","name"=>"statusAtendimento"];
+			$this->col[] = ["label"=>"Nascimento","name"=>"nascimento"];
 			$this->col[] = ["label"=>"CPF","name"=>"cpf"];
-			$this->col[] = ["label"=>"RG","name"=>"rg"];
-			$this->col[] = ["label"=>"Órgão Emissor","name"=>"orgaoEmissor"];
+			$this->col[] = ["label"=>"Telefone","name"=>"telCelular"];
+			$this->col[] = ["label"=>"Operadora","name"=>"operadoraCel"];
+			$this->col[] = ["label"=>"Anotação","name"=>"anotacao"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required','width'=>'col-sm-3'];
-			$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required|max:11','width'=>'col-sm-2'];
-			$this->form[] = ['label'=>'RG','name'=>'rg','type'=>'text','width'=>'col-sm-2'];
-			$this->form[] = ['label'=>'Órgão Emissor','name'=>'orgaoEmissor','type'=>'text','width'=>'col-sm-2'];
+
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'RG','name'=>'rg','type'=>'text','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'UF','name'=>'ufRg','type'=>'text','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Órgão Emissor','name'=>'orgaoEmissor','type'=>'text','width'=>'col-sm-10'];
 			# OLD END FORM
 
 			/* 

@@ -33,19 +33,21 @@
 			$this->col[] = ["label"=>"Supervisor","name"=>"coordenadores_id","join"=>"coordenadores,nome"];
 			$this->col[] = ["label"=>"Paciente","name"=>"pacientes_id","join"=>"pacientes,nome"];
 			$this->col[] = ["label"=>"Atendimento","name"=>"numeroAtendimento"];
-			$this->col[] = ["label"=>"Data","name"=>"data"];
+			
 			$this->col[] = ["label"=>"Tipo de atendimento","name"=>"tipoAtendimento"];
 			$this->col[] = ["label"=>"Descrição do atendimento","name"=>"descricaoAtendimento"];
+			$this->col[] = ["label"=>"Data","name"=>"data"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Supervisor','name'=>'coordenadores_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'coordenadores,nome'];
-			$this->form[] = ['label'=>'Paciente','name'=>'pacientes_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'pacientes,nome'];
-			$this->form[] = ['label'=>'Atendimento','name'=>'numeroAtendimento','type'=>'select','width'=>'col-sm-10','dataenum'=>'1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20'];
-			$this->form[] = ['label'=>'Data','name'=>'data','type'=>'date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Tipo de atendimento','name'=>'tipoAtendimento','type'=>'select','width'=>'col-sm-10','dataenum'=>'Triagem;Atendimento'];
-			$this->form[] = ['label'=>'Descrição do atendimento','name'=>'descricaoAtendimento','type'=>'select','width'=>'col-sm-10','dataenum'=>'Realizado;Não-realizado: Falta;Não-realizado: Falta justificada'];
+			$this->form[] = ['label'=>'Supervisor','name'=>'coordenadores_id','type'=>'select2','width'=>'col-sm-3','datatable'=>'coordenadores,nome'];
+			$this->form[] = ['label'=>'Paciente','name'=>'pacientes_id','type'=>'select2','width'=>'col-sm-3','datatable'=>'pacientes,nome'];
+			$this->form[] = ['label'=>'Atendimento','name'=>'numeroAtendimento','type'=>'select','width'=>'col-sm-3','dataenum'=>'1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20'];
+			
+			$this->form[] = ['label'=>'Tipo de atendimento','name'=>'tipoAtendimento','type'=>'select','width'=>'col-sm-3','dataenum'=>'Triagem;Atendimento'];
+			$this->form[] = ['label'=>'Descrição do atendimento','name'=>'descricaoAtendimento','type'=>'select','width'=>'col-sm-3','dataenum'=>'Realizado;Não-realizado: Falta;Não-realizado: Falta justificada'];
+			$this->form[] = ['label'=>'Data','name'=>'data','type'=>'date','width'=>'col-sm-2'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM

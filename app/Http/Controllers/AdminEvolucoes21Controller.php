@@ -30,31 +30,31 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Estagiário","name"=>"alunos_id","join"=>"alunos,nome"];
+			$this->col[] = ["label"=>"Estagiário responsável","name"=>"alunos_id","join"=>"alunos,nome"];
 			$this->col[] = ["label"=>"Paciente","name"=>"pacientes_id","join"=>"pacientes,nome"];
 			$this->col[] = ["label"=>"Data","name"=>"data"];
-			$this->col[] = ["label"=>"Horario","name"=>"horario"];
+			$this->col[] = ["label"=>"Horário","name"=>"horario"];
 			$this->col[] = ["label"=>"Descrição do atendimento","name"=>"descricao"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Estagiário','name'=>'alunos_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'alunos,nome'];
-			$this->form[] = ['label'=>'Paciente','name'=>'pacientes_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'pacientes,nome'];
-			$this->form[] = ['label'=>'Data','name'=>'data','type'=>'date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Horario','name'=>'horario','type'=>'time','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Descricao','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Estagiário responsável','name'=>'alunos_id','type'=>'select2','width'=>'col-sm-3','datatable'=>'alunos,nome'];
+			$this->form[] = ['label'=>'Paciente','name'=>'pacientes_id','type'=>'select2','width'=>'col-sm-3','datatable'=>'pacientes,nome'];
+			$this->form[] = ['label'=>'Data','name'=>'data','type'=>'date','width'=>'col-sm-3'];
+			$this->form[] = ['label'=>'Horário','name'=>'horario','type'=>'time','width'=>'col-sm-3'];
+			$this->form[] = ['label'=>'Descrição do atendimento','name'=>'descricao','type'=>'textarea','width'=>'col-sm-6'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
 			//$this->form[] = ["label"=>"Data","name"=>"data","type"=>"date","required"=>TRUE,"validation"=>"required|date"];
-			//$this->form[] = ["label"=>"Horario","name"=>"horario","type"=>"time","required"=>TRUE,"validation"=>"required|date_format:H:i:s"];
+			//$this->form[] = ["label"=>"Horário","name"=>"horario","type"=>"time","required"=>TRUE,"validation"=>"required|date_format:H:i:s"];
 			//$this->form[] = ["label"=>"Pacientes Id","name"=>"pacientes_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"pacientes,id"];
 			//$this->form[] = ["label"=>"Inscricoes Individuais Id","name"=>"inscricoes_individuais_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"inscricoes_individuais,id"];
 			//$this->form[] = ["label"=>"Alunos Id","name"=>"alunos_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"alunos,id"];
-			//$this->form[] = ["label"=>"Descricao","name"=>"descricao","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Numero","name"=>"numero","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
+			//$this->form[] = ["label"=>"Descrição","name"=>"descricao","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Número","name"=>"numero","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
 			# OLD END FORM
 
 			/* 
